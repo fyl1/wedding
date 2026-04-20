@@ -364,6 +364,8 @@ gtag("config", "GT-NFDH59Q7");
     opacity: 0;
     pointer-events: none;
     transition: opacity 1.5s ease;
+    background-image: url("img/main_img_2.png") ;
+background-size: cover;
   }
 
   .invite-video.active {
@@ -530,7 +532,7 @@ gtag("config", "GT-NFDH59Q7");
         <div class="names">
           <div>Андрій</div>
           <div class="and">&</div>
-          <div>Елізавета</div>
+          <div>Єлизавета</div>
         </div>
       </div>
     </div>
@@ -554,9 +556,8 @@ gtag("config", "GT-NFDH59Q7");
 
   <!-- ЭКРАН 2 -->
   <div class="invite-video" id="inviteVideo">
-    <video id="video" src="https://www.wedding-invitation.website/wp-content/uploads/2025/06/IMG_8331.mp4" autoplay muted playsinline loop></video>
     <div class="video-overlay">
-      <h2>Андрій & Елізавета </h2>
+      <h2>Андрій & Єлизавета </h2>
       <div>До нашого весілля залишилось:</div>
       <div class="timer" id="countdown">
         <div><span id="days">00</span>дні</div>
@@ -577,21 +578,12 @@ gtag("config", "GT-NFDH59Q7");
 </div>
 
 <script>
+
   function openVideo() {
-    const inviteStart = document.getElementById('inviteStart');
-    const inviteVideo = document.getElementById('inviteVideo');
-    const video = document.getElementById('video');
-    const music = document.getElementById('weddingMusic');
-
-    inviteStart.classList.add('hidden');
-
-    setTimeout(() => {
-      inviteStart.style.display = 'none';
-      inviteVideo.classList.add('active');
-      video.play();
-      music.play();
-    }, 1000);
+    document.getElementById('inviteStart').classList.add('hidden');
+    document.getElementById('inviteVideo').classList.add('active');
   }
+
 
   function updateTimer() {
     const now = new Date();
@@ -648,6 +640,7 @@ gtag("config", "GT-NFDH59Q7");
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&#038;family=Great+Vibes&#038;display=swap" rel="stylesheet">
 
 <style>
+
   .wedding-calendar-wrapper {
     max-width: 400px;
     margin: 0px auto;
@@ -1221,16 +1214,6 @@ gtag("config", "GT-NFDH59Q7");
 				<div class="et_pb_code_inner"><div class="timeline-wrapper">
   <div class="timeline">
     
-    <!-- Элемент 1 -->
-    <div class="timeline-item animate-on-scroll">
-      <div class="timeline-content image"><img  loading="lazy"
-     decoding="async" src="https://www.wedding-invitation.website/wp-content/uploads/2025/07/photo_2025-07-19_11-39-49.jpg" alt="Регистрация"></div>
-      <div class="timeline-dot"></div>
-      <div class="timeline-content text">
-        <div class="time">12:00</div>
-        <div class="label">Розпис</div>
-      </div>
-    </div>
 
     <!-- Элемент 2 -->
     <div class="timeline-item animate-on-scroll">
@@ -1238,8 +1221,8 @@ gtag("config", "GT-NFDH59Q7");
      decoding="async" src="https://www.wedding-invitation.website/wp-content/uploads/2025/07/photo_2025-07-19_11-39-45.jpg" alt="Фуршет"></div>
       <div class="timeline-dot"></div>
       <div class="timeline-content text">
-        <div class="time">12:00</div>
-        <div class="label">     Вінчання</div>
+        <div class="time">13:00</div>
+        <div class="label">     Церемонія </div>
       </div>
     </div>
 
@@ -1249,7 +1232,7 @@ gtag("config", "GT-NFDH59Q7");
      decoding="async" src="https://www.wedding-invitation.website/wp-content/uploads/2025/06/photo_2025-06-11_17-00-47-200x300.jpg" alt="Церемония"></div>
       <div class="timeline-dot"></div>
       <div class="timeline-content text">
-        <div class="time">15:30</div>
+        <div class="time">14:00</div>
         <div class="label">Банкет</div>
       </div>
     </div>
@@ -1260,7 +1243,7 @@ gtag("config", "GT-NFDH59Q7");
      decoding="async" src="https://www.wedding-invitation.website/wp-content/uploads/2025/06/photo_2025-06-11_14-27-58-225x300.jpg" alt="Танцы"></div>
       <div class="timeline-dot"></div>
       <div class="timeline-content text">
-        <div class="time">21:00</div>
+        <div class="time">19:30</div>
         <div class="label">Торт</div>
       </div>
     </div>
@@ -1466,11 +1449,11 @@ document.addEventListener("DOMContentLoaded", () => {
 				
 				<div class="et_pb_code_inner"><div class="wedding-palette-wrapper">
   <div class="wedding-palette" id="palette">
-    <div class="color-circle"><img decoding="async" src="https://www.wedding-invitation.website/wp-content/uploads/2025/05/Screenshot_202-2.png" alt="white silk"></div>
-    <div class="color-circle"><img decoding="async" src="https://www.wedding-invitation.website/wp-content/uploads/2025/05/Screenshot_204.png" alt="gold silk"></div>
-    <div class="color-circle"><img decoding="async" src="https://www.wedding-invitation.website/wp-content/uploads/2025/05/Screenshot_205.png" alt="light beige silk"></div>
-    <div class="color-circle"><img decoding="async" src="https://www.wedding-invitation.website/wp-content/uploads/2025/05/Screenshot_206.png" alt="beige silk"></div>
-    <div class="color-circle"><img decoding="async" src="https://www.wedding-invitation.website/wp-content/uploads/2025/08/изображение_2025-08-06_200250991.png" alt="bronze silk"></div>
+    <div class="color-circle"><img decoding="async" src="./img/icon/icon_1.png" alt="white silk"></div>
+    <div class="color-circle"><img decoding="async" src="./img/icon/icon_2.png" alt="gold silk"></div>
+    <div class="color-circle"><img decoding="async" src="./img/icon/icon_3.png" alt="light beige silk"></div>
+    <div class="color-circle"><img decoding="async" src="./img/icon/icon_4.png" alt="beige silk"></div>
+    <div class="color-circle"><img decoding="async" src="./img/icon/icon_5.png" alt="bronze silk"></div>
   </div>
 </div>
 
@@ -1598,19 +1581,270 @@ document.addEventListener("DOMContentLoaded", () => {
 				
 				
 				
-				<div class="et_pb_text_inner"><p style="text-align: center;">ДЕТАЛІ</p></div>
 			</div><div class="et_pb_module et_pb_text et_pb_text_3 et_animated  et_pb_text_align_left et_pb_bg_layout_light">
 				
 				
 				
 				
-				<div class="et_pb_text_inner"><p style="text-align: center;">Просимо вас не дарувати нам квіти, ми не встигнемо насолодитися їх красою.</p></div>
 			</div><div class="et_pb_module et_pb_code et_pb_code_7">
 				
 				
 				
 				
 				<div class="et_pb_code_inner"><!-- 💖 Серце з новими назвами класів і стилів -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Playfair+Display:wght@400;600&display=swap');
+
+      
+        .seating-chart {
+            max-width: 900px;
+            margin: 0 auto;
+            color: #333;
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #f5f5f5;
+        }
+
+        .couple-names {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-style: italic;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+
+        .wedding-date {
+            font-size: 1.3rem;
+            letter-spacing: 5px;
+            margin-bottom: 25px;
+            font-weight: 300;
+             color: #333;
+        }
+
+        .title {
+            font-size: 1.4rem;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            font-weight: 400;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 15px 0;
+            display: inline-block;
+        }
+
+        .tables-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+        }
+
+        .table-column {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .table-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .table-label {
+            font-size: 1.6rem;
+         color: #333;
+            margin-bottom: 25px;
+            text-align: center;
+            letter-spacing: 4px;
+            font-weight: 600;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .guest-list {
+            list-style: none;
+        }
+
+        .guest-item {
+            padding: 12px 0;
+            color: #f5f5f5;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .guest-item:last-child {
+            border-bottom: none;
+        }
+
+        .guest-item:hover {
+            color: #d4a574;
+            transform: translateX(5px);
+        }
+
+        .guest-count {
+            color: #d4a574;
+            font-size: 0.9rem;
+            margin-left: 5px;
+            font-weight: 600;
+        }
+
+        .couple-section {
+            background: rgba(212, 165, 116, 0.15);
+            border: 2px solid #d4a574;
+            border-radius: 15px;
+            padding: 35px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .couple-title {
+            font-size: 1.8rem;
+            color: #d4a574;
+            letter-spacing: 4px;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+        .seating__title{
+              font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    color: #000;
+        }
+        .seating__item{
+          font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    color: #000;
+        }
+
+        /* Адаптивність */
+        @media (max-width: 768px) {
+            .seating-chart {
+                padding: 30px 20px;
+            }
+
+            .tables-wrapper {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .couple-names {
+                font-size: 2.5rem;
+            }
+
+            .wedding-date {
+                font-size: 1.1rem;
+                letter-spacing: 3px;
+            }
+
+            .title {
+                font-size: 1.1rem;
+                letter-spacing: 4px;
+            }
+
+            .table-section {
+                padding: 20px;
+            }
+
+            .table-label {
+                font-size: 1.4rem;
+            }
+
+            .guest-item {
+                font-size: 1.05rem;
+                padding: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .couple-names {
+                font-size: 2rem;
+            }
+
+            .wedding-date {
+                font-size: 1rem;
+            }
+
+            .title {
+                font-size: 1rem;
+                letter-spacing: 3px;
+            }
+
+            .table-label {
+                font-size: 1.3rem;
+            }
+
+            .guest-item {
+                font-size: 1rem;
+            }
+
+            .couple-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+
+
+    <div class="seating-chart">
+        <div class="header">
+            <h1 class="couple-names">Андрій & Єлизавета </h1>
+            <div class="wedding-date">06.06.26</div>
+            <div class="title seating__title">План розсадки гостей</div>
+        </div>
+
+        <div class="tables-wrapper">
+            <div class="table-column">
+                <!-- Стіл 1 -->
+                <div class="table-section">
+                    <div class="table-label">СТІЛ 1</div>
+                    <ul class="guest-list">
+                        <li class="guest-item seating__item">Мама Олена та чоловік Віталій</li>
+                        <li class="guest-item seating__item">Мама Інна та тато Сергій</li>
+                        <li class="guest-item seating__item">Тітка Надія та дядя Василь</li>
+                        <li class="guest-item seating__item">
+                            Бабуся та тітка Катерина 
+                            <span class="guest-count">(8)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Стіл 3 -->
+                <div class="table-section">
+                    <div class="table-label">СТІЛ 3</div>
+                    <ul class="guest-list">
+                        <li class="guest-item seating__item">Сестра Діана та Максим</li>
+                        <li class="guest-item seating__item">Ксюша та Яна</li>
+                        <li class="guest-item seating__item">Брат Сергій та Рома</li>
+                        <li class="guest-item seating__item">Сестра Юля та Ріта</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="table-column">
+                <!-- Стіл 2 -->
+                <div class="table-section">
+                    <div class="table-label">СТІЛ 2</div>
+                    <ul class="guest-list">
+                        <li class="guest-item seating__item">Тітка Людмила та Віталій</li>
+                        <li class="guest-item seating__item">Олег та Анна</li>
+                        <li class="guest-item seating__item">Брат Артем та Ірина</li>
+                        <li class="guest-item seating__item">Племінник Анатолій</li>
+                        <li class="guest-item seating__item">Тітка Наталія</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
 
 <style>
   .animated-heart-block {
@@ -1658,8 +1892,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				
 				
 				
-				<div class="et_pb_text_inner"><p style="text-align: center;">Приємним компліментом для нас буде, якщо ви замість квітів вирішите подарувати нам пляшку алкогольного напою для нашої колекції, яку ми відкриємо на найближчому нашому сумісному святі.</p></div>
-			</div>
+			
 			</div>
 				
 				
@@ -1835,7 +2068,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <h2 class="fancy-header">Андрій</h2>
 <h2 class="fancy-header">&</h2>
-<h2 class="fancy-header">Елізавета</h2></div>
+<h2 class="fancy-header">Єлизавета</h2></div>
 			</div><div class="et_pb_module et_pb_image et_pb_image_1 et_animated et-waypoint">
 				
 				
